@@ -1,44 +1,55 @@
 @charset "UTF-8";
 
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+* { /* o (*) cria uma configuração padrão*/
+    margin: 0px; /*Toda página tem margem, aqui eu retiro toda ela*/
+    padding: 0px; /*Tira os espaços ao lado */
+    font-family: Arial, Helvetica, sans-serif; /*Define a fonte*/
 }
 
 html, body {
-    height: 100vh;
-    width: 100vw;
+    height: 100vh;/*Altura cobre 100% da tela*/
+    width: 100vw;/*Largura cobre 100% da tela*/
     background-color: black;
 }
 
 
 body {
-    background: url(imagens/pexels-picturemechaniq-1749303.jpg);
-    background-repeat: no-repeat;                 /* sem repetir */
-    background-position: top center;              /* posição topo e centro */
-    background-attachment: fixed;                 /* fixa enquanto rola */
-    background-size: cover; 
+    background: url(imagens/pexels-picturemechaniq-1749303.jpg); /*Imagem de fundo (Café)*/
+    background-repeat: no-repeat;   /*Sem repetir*/
+    background-position: top center;  /* posição topo e centro */
+    background-attachment: fixed; /* fixa enquanto rola */
+    background-size: cover; /*Cover: Cobre totalmente o fundo*/
 }
 
 
 main {
-    height: 100vh;
-    position: relative;
+    height: 100vh; /*Cobrir toda a altura*/
+    position: relative; /*Deixa a posição totalmente relativa, permitindo colocar elementos dentro do main*/
 }
-section#telefone {
-    height: 511px;
+section#telefone { /*Aqui entra as configurações do telefone*/
+    height: 511px; /*Tamanho*/
     width: 351px;
-    position: relative;
+    position: relative; /*Movimentaçaõ da tela r vpnfigutsçõrd de forma manual*/
 
-    top: 50%;
+    top: 50%; /*Centralização*/
     left: 50%;
     transform: translate(-50%, -50%);
 
     
-    background-image: url(imagens/phone_035-removebg-preview.png);
-    background-position: center;
-    background-size: contain;
-    background-size: 600px 600px;
+    background-image: url(imagens/phone_035-removebg-preview.png); /*Imagem do telefone*/
+    background-position: center; /*centraliza*/
+    background-size: contain;/*Mantem exatamente o tamanho da imagem sem deformar ela*/
+    background-size: 600px 600px;/*Define o tamanho até cortando a iamgem,visto que foi colocando o (contain)*/
 
+}
+iframe#tela { /*Aqui já é a tela*/
+    position: relative; /*Permite auterações de tamnho*/
+    top: 27px; /*O top e left coloca o ponto que ela vai começar para aumentar para cima ou para baixo no widht e height*/
+    left: 69px;
+    width: 213px;
+    height: 458px;
+
+    border-radius: 30px; /*Aqui faz o arredodamento do iframe*/
+    overflow: hidden;/*Impede que o conteúdo ultrapasse os limites do iframe*/
+    border: none; /*Remove qualquer borda padrão do iframe*/
 }
