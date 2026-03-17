@@ -30,6 +30,7 @@ section#telefone { /*Aqui entra as configurações do telefone*/
     height: 511px; /*Tamanho*/
     width: 351px;
     position: relative; /*Movimentaçaõ da tela r vpnfigutsçõrd de forma manual*/
+    background-color: black;
 
     top: 50%; /*Centralização*/
     left: 50%;
