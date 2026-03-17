@@ -30,7 +30,6 @@ section#telefone { /*Aqui entra as configurações do telefone*/
     height: 511px; /*Tamanho*/
     width: 351px;
     position: relative; /*Movimentaçaõ da tela r vpnfigutsçõrd de forma manual*/
-    background-color: black;
 
     top: 50%; /*Centralização*/
     left: 50%;
@@ -49,6 +48,7 @@ iframe#tela { /*Aqui já é a tela*/
     left: 69px;
     width: 213px;
     height: 458px;
+    background-color: black;
 
     border-radius: 30px; /*Aqui faz o arredodamento do iframe*/
     overflow: hidden;/*Impede que o conteúdo ultrapasse os limites do iframe*/
